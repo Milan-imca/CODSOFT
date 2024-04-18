@@ -15,7 +15,7 @@ exports.registerUser = async (req, res) => {
 
     //already existing user:
     const existingUser = await userModel.findOne({ email });
-    if (existingUser) {
+    if (existingUser) { 
       return res.status(401).send({
         success: false,
         message: 'User already exits'

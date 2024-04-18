@@ -1,0 +1,67 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: #e0e5eb;
+}
+
+
+span{
+  color: #FF7A00;
+  font-weight: 500;
+  font-size: x-large;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+nav ul li{
+  list-style: none;
+  color: #556987;
+  cursor: pointer;
+}
+nav ul li:hover{
+  color: #FF7A00;
+}
+
+
+nav button{
+  padding: 7px 7px;
+  margin: 3px;
+  color: white;
+  font-weight: 400;
+}
+
+.signUpBtn{
+  background-color: #FF7A00;
+  border: none;
+  border-radius: 5px;
+}
+.signUpBtn:hover{
+  cursor: pointer;
+  background-color: #f8b576;
+}
+.loginBtn{
+  background-color: transparent;
+  color: #556987;
+  border: none;
+}
+
+.loginBtn:hover{
+  cursor: pointer;
+  color: #FF7A00;
+}
+
+.logoutBtn{
+  background-color: #FF7A00;
+  border: none;
+  border-radius: 5px;
+}
+
+.logoutBtn:hover{
+  cursor: pointer;
+  background-color: #f8b576;
+}
