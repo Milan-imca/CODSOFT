@@ -33,7 +33,7 @@ exports.getSingleBlog = async (req, res) => {
 //all blogs (GET)
 exports.getAllBlogs = async (req, res) => {
   try {
-    const allBlogs = await blogModel.find({});
+    const allBlogs = await blogModel.find({}).populate("user");
     if (!allBlogs) {
       return res.status(200).send({
         success: false,
@@ -62,10 +62,10 @@ exports.createBlog = async (req, res) => {
   try {
     const { title, description, image, user } = req.body;
 
-    if (!title || !description || !image) {
+    if (!title || !description || !image || !user) {
       return res.status(400).send({
         success: false,
-        message: 'Please provide all fields',
+        message: 'Please provide all fields something is missing',
       });
     }
     const existingUser = await userModel.findById(user);
@@ -87,7 +87,8 @@ exports.createBlog = async (req, res) => {
 
     return res.status(201).send({
       success: true,
-      message: "Blog Created Successfully"
+      message: "Blog Created Successfully",
+      newBlog,
     })
   } catch (error) {
     console.log(error);
@@ -126,7 +127,6 @@ exports.blogUpdate = async (req, res) => {
 exports.deleteBlog = async (req, res) => {
 
   try {
-    // const { id } = req.params;
     const blog = await blogModel.findByIdAndDelete(req.params.id).populate("user");
     await blog.user.blogs.pull(blog);
     await blog.user.save();
