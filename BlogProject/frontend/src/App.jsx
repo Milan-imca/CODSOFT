@@ -9,6 +9,7 @@ import ContactUs from './Pages/ContactUs';
 import UserBlogs from './Pages/UserBlogs';
 import CreateBlog from './Pages/CreateBlog';
 import BlogEdit from './Pages/BlogEdit';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Toaster />
       <Routes>
         <Route path="/" element={<Blog />} />
         <Route path="/login" element={<Login />} />
@@ -25,6 +27,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
+
     </>
 
 

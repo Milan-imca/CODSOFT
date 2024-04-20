@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
+
 const BlogEdit = () => {
 
   const [blog, setBlog] = useState({});
@@ -26,15 +28,15 @@ const BlogEdit = () => {
     try {
       const response = await axios.put(`http://localhost:8080/api/v1/blog/update-blog/${id}`, formData);
       if (response.data.success) {
-        alert('Blog updated successfully');
+        toast.success('Blog updated successfully');
         navigate("/my-blogs")
         e.target.reset(); // Reset form fields
       } else {
-        alert('Failed to update blog');
+        toast.error('Failed to update blog');
       }
     } catch (error) {
-      console.error('Error updating blog:', error);
-      alert('Failed to update blog');
+      toast.error('Error updating blog:', error);
+      toast.error('Failed to update blog');
     }
   };
 
@@ -67,51 +69,104 @@ const BlogEdit = () => {
 
 
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="title">Title:</label>
-        <input
-          type="text"
-          id="title"
-          name="title"
-          value={formData.title}
-          onChange={handleChange}
-          required
-        />
-        <br />
+    //  <>
+    //   <form onSubmit={handleSubmit}>
+    //     <label htmlFor="title">Title:</label>
+    //     <input
+    //       type="text"
+    //       id="title"
+    //       name="title"
+    //       value={formData.title}
+    //       onChange={handleChange}
+    //       required
+    //     />
+    //     <br />
 
-        <label htmlFor="description">Description:</label>
-        <textarea
-          id="description"
-          name="description"
-          value={formData.description}
-          onChange={handleChange}
-          required
-        />
-        <br />
+    //     <label htmlFor="description">Description:</label>
+    //     <textarea
+    //       id="description"
+    //       name="description"
+    //       value={formData.description}
+    //       onChange={handleChange}
+    //       required
+    //     />
+    //     <br />
 
-        <label htmlFor="image">Image URL:</label>
-        <input
-          type="text"
-          id="image"
-          name="image"
-          value={formData.image}
-          onChange={handleChange}
-          required
-        />
-        <br />
+    //     <label htmlFor="image">Image URL:</label>
+    //     <input
+    //       type="text"
+    //       id="image"
+    //       name="image"
+    //       value={formData.image}
+    //       onChange={handleChange}
+    //       required
+    //     />
+    //     <br />
 
-        {/* Assuming user ID is stored in localStorage */}
-        <input
-          type="hidden"
-          name="user"
-          value={localStorage.getItem('userId')}
-          onChange={handleChange}
-        />
+    //     {/* Assuming user ID is stored in localStorage */}
+    //     <input
+    //       type="hidden"
+    //       name="user"
+    //       value={localStorage.getItem('userId')}
+    //       onChange={handleChange}
+    //     />
 
-        <button>Update </button>
-      </form>
-    </>
+    //     <button>Update </button>
+    //   </form>
+    // </>
+
+    <div className="flex justify-center items-center h-screen">
+      <div className="w-full max-w-md">
+        <h2 className="text-center text-2xl font-bold text-orange-500 mb-4">Edit Blog</h2>
+        <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <label htmlFor="title" className="block text-gray-700 text-sm font-bold mb-2">Title:</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            value={formData.title}
+            onChange={handleChange}
+            required
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+          />
+
+          <label htmlFor="description" className="block text-gray-700 text-sm font-bold mb-2">Description:</label>
+          <textarea
+            id="description"
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+            required
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+          />
+
+          <label htmlFor="image" className="block text-gray-700 text-sm font-bold mb-2">Image URL:</label>
+          <input
+            type="text"
+            id="image"
+            name="image"
+            value={formData.image}
+            onChange={handleChange}
+            required
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+          />
+
+          <input
+            type="hidden"
+            name="user"
+            vvalue={localStorage.getItem('userId')}
+            onChange={handleChange}
+          />
+
+          <button
+            type="submit"
+            className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Update
+          </button>
+        </form>
+      </div>
+    </div>
   )
 }
 
