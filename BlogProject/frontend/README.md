@@ -23,10 +23,14 @@ This is a MERN (MongoDB, Express.js, React.js, Node.js) stack project for creati
 - **Styling:** Tailwind  (for styling)
 
 
-<!-- <h3 align="left">Connect with me:</h3> -->
-<h3 align="left">Connect with me:</h3>
-<div style="display:flex; align-item:center; ">
-  <a href="https://www.linkedin.com/in/milan-poria-095622241/" target="blank" class="mr-4"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="milan poria" height="30" width="40" /></a>
 
-  <a href="https://instagram.com/milann.sh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="milann.sh" height="30" width="40" /></a>
-</div>
+
+
+
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/milan poria" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="milan poria" height="30" width="40" /></a>
+<a href="https://instagram.com/milann.sh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="milann.sh" height="30" width="40" /></a>
+</p>
+
