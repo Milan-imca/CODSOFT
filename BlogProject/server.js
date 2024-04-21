@@ -3,6 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
 const connectMongo = require('./config/MonogDB');
+const path = require('path');
 
 //env config: keep this first 
 dotenv.config();
@@ -31,8 +32,14 @@ app.use("/api/v1/user", userRoutes);
 //blogs
 app.use("/api/v1/blog", blogRoutes);
 
+
+app.use(express.static(path.join(__dirname, './frontend/dist')));
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, "./frontend/dist/index.html"))
+})
 //Getting from .env file
 const PORT = process.env.PORT || 8080;
+
 
 //listening
 app.listen(PORT, () => {

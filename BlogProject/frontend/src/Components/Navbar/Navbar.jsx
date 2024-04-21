@@ -29,8 +29,6 @@ const Navbar = () => {
   return (
     <nav className='flex items-center justify-between py-4 px-6 shadow-md bg-gradient-to-r w-full overflow-x-hidden'>
       <span className="text-orange-500 text-2xl font-bold">Readify</span>
-
-
       <ul className="hidden md:flex justify-center space-x-4 text-white hover:text-gray-200">
         <li><Link to="/" className="text-gray-600  hover:text-orange-500">Blogs</Link></li>
         {isLogin && (

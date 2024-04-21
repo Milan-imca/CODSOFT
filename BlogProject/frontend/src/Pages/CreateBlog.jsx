@@ -39,50 +39,7 @@ const CreateBlogForm = () => {
   };
 
   return (
-    // <form onSubmit={handleSubmit}>
-    //   <label htmlFor="title">Title:</label>
-    //   <input
-    //     type="text"
-    //     id="title"
-    //     name="title"
-    //     value={formData.title}
-    //     onChange={handleChange}
-    //     required
-    //   />
-    //   <br />
-
-    //   <label htmlFor="description">Description:</label>
-    //   <textarea
-    //     id="description"
-    //     name="description"
-    //     value={formData.description}
-    //     onChange={handleChange}
-    //     required
-    //   />
-    //   <br />
-
-    //   <label htmlFor="image">Image URL:</label>
-    //   <input
-    //     type="text"
-    //     id="image"
-    //     name="image"
-    //     value={formData.image}
-    //     onChange={handleChange}
-    //     required
-    //   />
-    //   <br />
-
-    //   {/* Assuming user ID is stored in localStorage */}
-    //   <input
-    //     type="hidden"
-    //     name="user"
-    //     value={localStorage.getItem('userId')}
-    //     onChange={handleChange}
-    //   />
-
-    //   <button>Create Blog</button>
-    // </form>
-
+   
     <div className="flex justify-center items-center h-screen">
       <div className="w-full max-w-md">
       <h2 className="text-center text-2xl font-bold text-orange-500 mb-4">Create Blog</h2>

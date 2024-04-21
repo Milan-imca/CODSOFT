@@ -41,36 +41,6 @@ const Register = () => {
   }
 
   return (
-    // <div className='mainContainer'>
-
-
-    //   <div className='formContainer'>
-    //     <div className='formTitle'>
-    //       <h1>Sign Up</h1>
-    //       <span>Begin your journey with Readify</span>
-
-    //     </div>
-    //     <div className='form'>
-    //       <form action="" onSubmit={handleSubmit}>
-    //         <label>Name*</label><br />
-
-    //         <input type="text" placeholder='Name' name='username' value={input.username} onChange={handleInput} /><br />
-    //         <label>Email*</label><br />
-    //         <input type="email" placeholder='Email' name='email' value={input.email} onChange={handleInput} /><br />
-    //         <label>Password*</label><br />
-    //         <input type="text" placeholder='Password' name='password' value={input.password} onChange={handleInput} /><br />
-    //         <button>Sign Un</button>
-    //       </form>
-    //     </div>
-    //     <div className='text'>
-    //       <p>Don't have an account ? <span onClick={() => navigate("/login")}>Sign Up</span></p>
-    //     </div>
-    //   </div>
-
-    //   <div className='imageContainer'>
-    //     <img src="login_img.png" alt="" />
-    //   </div>
-    // </div>
     <div className="flex justify-center items-center h-screen">
       <div className="w-full max-w-xs">
         <h2 className="text-center text-2xl font-bold text-orange-500 mb-4">Create an Account</h2>
