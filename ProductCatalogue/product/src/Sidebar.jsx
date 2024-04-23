@@ -36,7 +36,7 @@ const Sidebar = () => {
   const resetFilters = () => {
     setSortOrder(null); // Reset sort order
   };
-  // console.log(filteredProducts);
+
 
   return (
     <>
@@ -70,7 +70,7 @@ const Sidebar = () => {
               <div className="mt-7 box rounded-xl border border-gray-300 bg-white p-6 w-full md:max-w-sm">
                 <div className="flex items-center justify-between w-full pb-3 border-b border-gray-200 mb-7">
                   <p className="font-medium text-base leading-7 text-black">Filter</p>
-                  <p className="font-medium text-xs text-gray-500 cursor-pointer transition-all duration-500 hover:text-indigo-600" onClick={resetFilters}>RESET</p>
+                  <p className="font-medium text-xs text-gray-500 cursor-pointer transition-all duration-500 hover:text-indigo-700" onClick={resetFilters}>RESET</p>
                 </div>
                 <div className="box flex flex-col gap-2">
                   <div className="flex items-center">

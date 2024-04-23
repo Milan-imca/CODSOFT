@@ -26,7 +26,7 @@ const Product = ({ prod }) => {
       <div className="mt-5 flex items-center justify-between">
         <div className="">
           <h6 className="font-medium text-xl leading-8 text-black mb-2">{prod.name}</h6>
-          <h6 className="font-semibold text-xl leading-8 text-indigo-600">{prod.price}</h6>
+          <h6 className="font-semibold text-xl leading-8 text-indigo-600">${prod.price}</h6>
         </div>
 
 

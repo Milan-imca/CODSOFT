@@ -49,7 +49,7 @@ function Header() {
     <div className="navbar bg-base-100 p-5">
       <div className="flex-1">
         <Link to="/" className="btn btn-ghost text-xl">
-          Aritfy
+          Artify
         </Link>
       </div>
       <div className="flex-none gap-2">
