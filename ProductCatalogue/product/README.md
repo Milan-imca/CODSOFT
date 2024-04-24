@@ -1,6 +1,5 @@
 <h1 align="center">Hi 👋, I'm Milan</h1>
-- 🔭 Project : Product Catalogue (Task -4 ) #codsoftintership
-
+- 🔭 Project : Product Catalogue (Task -4 )#codsoftinternship @codsoft
 
 
 
