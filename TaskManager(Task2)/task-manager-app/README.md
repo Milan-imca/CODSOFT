@@ -17,11 +17,11 @@ A simple task manager app built with React that allows users to `add, edit, dele
 
 ## Features
 
-- **Add a new task**: Enter the task description and click "Add Task"
-- **Edit a task**: Click the edit icon next to the task, make your changes, and click "Save"
-- **Delete a task**: Click the delete icon next to the task
--**Mark a task as completed/incomplete**: Click the checkbox next to the task
-- **View completed tasks**: Scroll down to the "Completed Tasks" section
+- **Add a new task**: Enter the task description and click "Add Task".
+- **Edit a task**: Click the edit icon next to the task, make your changes, and click "Save".
+- **Delete a task**: Click the delete icon next to the task.
+- **Mark a task as completed/incomplete**: Click the checkbox next to the task.
+- **View completed tasks**: Scroll down to the "Completed Tasks" section.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
