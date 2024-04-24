@@ -3,15 +3,6 @@
 
 A simple task manager app built with React that allows users to `add, edit, delete,` and `mark tasks as completed`. Tasks are stored locally using `localStorage` to persist across page reloads.
 
-## Features
-
-- Add a new task with an optional completion date
-- Edit existing tasks
-- Delete tasks
-- Mark tasks as completed or incomplete
-- Tasks are divided into "Incomplete Tasks" and "Completed Tasks" sections
-- Tasks are saved locally and persist across page reloads
-
 ## Technologies Used
 <p align="left">  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
 
