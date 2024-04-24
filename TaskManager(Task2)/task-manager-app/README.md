@@ -1,6 +1,7 @@
+<h1 align="center">Hi 👋, I'm Milan</h1>
+- 🔭 Project : Task Tracker Application  (Task - 2 ) #codsoftinternship @codsoft
 
 # Task Manager App 🧾
-
 A simple task manager app built with React that allows users to `add, edit, delete,` and `mark tasks as completed`. Tasks are stored locally using `localStorage` to persist across page reloads.
 
 ## Technologies Used
